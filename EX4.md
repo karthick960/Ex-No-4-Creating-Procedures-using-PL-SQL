@@ -11,7 +11,7 @@
 6. Display the employee table
 
 ### Program:
-'''
+```
 CREATE TABLE ep1(
        empid NUMBER,
        empname VARCHAR(10),
@@ -33,7 +33,7 @@ CREATE TABLE ep1(
        END LOOP;
        END;
        /
-    '''
+```
 
 
 ### Output:
