@@ -37,7 +37,9 @@ CREATE TABLE ep1(
 
 
 ### Output:
-![Creating procedures](https://github.com/Jeevapriya14/Ex-No-4-Creating-Procedures-using-PL-SQL/assets/121003043/be934143-f0ce-4bdd-a0f4-e40ef075f092)
+![dbms4](https://github.com/karthick/Ex-No-4-Creating-Procedures-using-PL-SQL/assets/121215938/9e49b43a-3ed1-4942-a45d-3ddd71108d6d)
+
+
 
 ### Result:
 Thus,the output has been successfully verified!
