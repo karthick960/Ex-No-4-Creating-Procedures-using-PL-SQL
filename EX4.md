@@ -37,7 +37,8 @@ CREATE TABLE ep1(
 
 
 ### Output:
-![dbms4](https://github.com/karthick960/Ex-No-4-Creating-Procedures-using-PL-SQL/assets/121215938/6c31bb45-9e1b-4889-aa6d-7dd426496d85)
+![Screenshot 2023-10-04 220131](https://github.com/karthick960/Ex-No-4-Creating-Procedures-using-PL-SQL/assets/121215938/0a411b2f-ff39-4221-8453-546f1d86aef9)
+
 
 
 ### Result:
