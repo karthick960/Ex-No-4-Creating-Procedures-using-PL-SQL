@@ -1,8 +1,9 @@
 # Ex. No: 4 Creating Procedures using PL/SQL
 
-### AIM: To create a procedure using PL/SQL.
+## Aim: 
+To create a procedure using PL/SQL.
 
-### Steps:
+## Algorithm:
 1. Create employee table with following attributes (empid NUMBER, empname VARCHAR(10), dept VARCHAR(10),salary NUMBER);
 2. Create a procedure named as insert_employee data.
 3. Inside the procdure block, write the query for inserting the values into the employee table.
@@ -10,36 +11,34 @@
 5. Call the insert_employee data procedure to insert the values into the employee table.
 6. Display the employee table
 
-### Program:
+## Program:
+```sql
+create table employ( empid number,empname varchar(10),dept varchar(10),salary number);
+
+CREATE OR REPLACE PROCEDURE insert_employ_data AS
+BEGIN
+
+INSERT INTO employ (empid,empname,dept,salary) VALUES (1,'John','HR',50000);
+
+INSERT INTO employ (empid,empname,dept,salary) VALUES (2,'Joe','IT',60000);
+
+INSERT INTO employ (empid,empname,dept,salary) VALUES (3,'Bob','Finance',55000);
+
+COMMIT;
+
+FOR emp_rec IN (SELECT * FROM employ) LOOP
+DBMS_OUTPUT.PUT_LINE('Employee ID: ' || emp_rec.empid || ',Employee Name: ' || emp_rec.empname || ', Department: ' || emp_rec.dept || ', Salary:' || emp_rec.salary);
+END LOOP;
+END;
+/
+BEGIN
+    insert_employ_data;
+    END;
+    /
+select *from employ;
 ```
-CREATE TABLE ep1(
-       empid NUMBER,
-       empname VARCHAR(10),
-       dept VARCHAR(10),
-       salary NUMBER
-       );
-       CREATE OR REPLACE PROCEDURE emp_data AS
-       BEGIN
-       INSERT INTO ep1(empid,empname,dept,salary)
-       values(1,'Swetha','MD',10000000);
-       INSERT INTO ep1(empid,empname,dept,salary)
-       values(2,'Anitha','HR',500000);
-       INSERT INTO ep1(empid,empname,dept,salary)
-       values(3,'Divya','IT',200000);
-       COMMIT;
-       FOR emp_rec IN (SELECT * FROM ep1)LOOP
-       DBMS_OUTPUT.PUT_LINE('EMPLOYEE ID:'||emp_rec.empid||',EMPLOYEE NAME:'|| emp_rec.empname||
-       ',DEPARTMENT:'||emp_rec.dept||',SALARY:'||emp_rec.salary);
-       END LOOP;
-       END;
-       /
-```
+## Output:
+![Screenshot 2023-10-04 220131](https://github.com/karthick960/Ex-No-4-Creating-Procedures-using-PL-SQL/assets/121215938/de979b87-1eb5-45d1-be83-e7ddb099bf35)
 
-
-### Output:
-![Screenshot 2023-10-04 220131](https://github.com/karthick960/Ex-No-4-Creating-Procedures-using-PL-SQL/assets/121215938/0a411b2f-ff39-4221-8453-546f1d86aef9)
-
-
-
-### Result:
-Thus,the output has been successfully verified!
+## Result:
+   Thus, procedure is created using PL/SQL.
